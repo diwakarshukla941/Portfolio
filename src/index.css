@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+body {
+  @apply bg-primary text-textPrimary;
+  overflow-x: hidden;
+}
+
+.custom-cursor {
+  width: 32px;
+  height: 32px;
+  border: 2px solid theme('colors.secondary');
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.custom-cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: theme('colors.secondary');
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+}
+
+.hover-trigger:hover ~ .custom-cursor {
+  transform: scale(1.5);
+  background-color: theme('colors.secondary/10');
+  border-color: theme('colors.accent');
+}
+
+.section-heading::after {
+  content: '';
+  display: block;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background: linear-gradient(to right, theme('colors.secondary/30'), transparent);
+}
+
+.project-card {
+  position: relative;
+  background: linear-gradient(to right bottom, 
+    theme('colors.primary'),
+    theme('colors.primary/95')
+  );
+  border-radius: theme('borderRadius.lg');
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(to right bottom, 
+    theme('colors.secondary/30'),
+    theme('colors.accent/30')
+  );
+  mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
