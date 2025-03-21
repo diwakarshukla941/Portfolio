@@ -24,8 +24,9 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-primary/90 backdrop-blur-sm py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
+        {/* Updated: Personal Branding */}
         <Link to="hero" smooth={true} className="text-secondary text-2xl font-bold cursor-pointer">
-          Portfolio
+          Diwakar Shukla
         </Link>
 
         {/* Desktop Menu */}

@@ -3,14 +3,16 @@ import profilePic from "../images/portfolio_pic.png";
 
 const About = () => {
   const skills = [
+    { name: "HTML5 & CSS3", icon: "🌐" },
     { name: "JavaScript (ES6+)", icon: "⚡" },
-    { name: "React & Next.js", icon: "⚛️" },
-    { name: "Node.js", icon: "🚀" },
-    { name: "TypeScript", icon: "📘" },
+    { name: "React.js", icon: "⚛️" },
+    { name: "Node.js (Express.js)", icon: "🚀" },
+    { name: "Core PHP", icon: "🖥️" },
     { name: "Python", icon: "🐍" },
-    { name: "SQL & NoSQL", icon: "🗃️" },
-    { name: "AWS & Cloud", icon: "☁️" },
-    { name: "DevOps & CI/CD", icon: "🔄" },
+    { name: "MySQL", icon: "🗃️" },
+    { name: "MongoDB", icon: "🗄️" },
+    { name: "AWS (Basic)", icon: "☁️" },
+    { name: "DevOps & CI/CD (Basic)", icon: "🔄" },
   ];
 
   return (
@@ -31,17 +33,10 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="text-textSecondary space-y-4">
             <p className="leading-relaxed">
-              Hello! I'm a passionate developer who loves creating elegant
-              solutions to complex problems. My journey in web development began
-              with a curiosity about how websites work, and that curiosity has
-              evolved into a professional career building modern web
-              applications.
+              Hello! I'm Diwakar Shukla, a passionate and results-driven software engineer with hands-on experience in developing scalable and high-throughput web applications. My journey in web development began with a curiosity about how websites work, and that curiosity has evolved into a professional career.
             </p>
             <p className="leading-relaxed">
-              Today, I work with cutting-edge technologies to build scalable,
-              performant applications that provide exceptional user experiences.
-              I'm particularly interested in web performance, accessibility, and
-              creating intuitive user interfaces.
+              I specialize in building innovative, user-friendly applications using modern technologies. I am particularly interested in web performance, accessibility, and creating intuitive user interfaces that enhance user experiences.
             </p>
             <div className="pt-6">
               <h3 className="text-textPrimary font-semibold mb-4">
@@ -71,7 +66,7 @@ const About = () => {
               <div className="relative w-full h-full overflow-hidden rounded-lg">
                 <img
                   src={profilePic}
-                  alt="Developer"
+                  alt="Diwakar Shukla - Software Engineer"
                   className="w-full h-full object-cover grayscale transition-all duration-500 transform group-hover:grayscale-0 group-hover:scale-105"
                 />
               </div>

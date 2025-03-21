@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
+import { SiLeetcode } from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -36,8 +37,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="text-textSecondary max-w-xl mb-8 text-lg hover-trigger"
         >
-          I craft exceptional digital experiences with modern web technologies.
-          Specializing in building innovative, scalable, and user-friendly applications.
+          I can’t remember my code after a few days, but I can still remember that one typo that took me hours to fix! 
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ const Hero = () => {
           </a>
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/diwakarshukla941"
               target="_blank"
               rel="noopener noreferrer"
               className="text-textSecondary hover:text-secondary transition-colors hover-trigger text-2xl"
@@ -61,7 +61,7 @@ const Hero = () => {
               <FiGithub />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/diwakar-shukla/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-textSecondary hover:text-secondary transition-colors hover-trigger text-2xl"
@@ -69,12 +69,12 @@ const Hero = () => {
               <FiLinkedin />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://leetcode.com/u/DIWAKARSHUKLA2003/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-textSecondary hover:text-secondary transition-colors hover-trigger text-2xl"
             >
-              <FiTwitter />
+              <SiLeetcode />
             </a>
           </div>
         </motion.div>

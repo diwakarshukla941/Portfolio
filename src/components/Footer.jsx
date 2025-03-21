@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <footer className="py-8 text-center text-textSecondary">
-      <p>Built with React & Tailwind CSS</p>
-      <p className="text-sm">© 2024 John Doe. All rights reserved.</p>
+      <p>Made with ❤️ by Diwakar Shukla</p>
+      <p className="text-sm">© 2025 All rights reserved.</p>
     </footer>
   );
 };
