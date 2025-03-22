@@ -19,7 +19,7 @@
             or just want to say hi, I'll try my best to get back to you!
           </p>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:shukladiwakar941@gmail.com"
             className="inline-block px-8 py-4 border-2 border-secondary text-secondary hover:bg-secondary/10 transition-colors rounded"
           >
             Say Hello
