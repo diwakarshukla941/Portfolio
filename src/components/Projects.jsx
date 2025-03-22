@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
-
+import galleria from "../images/galleria.png"
 const Projects = () => {
   const projects = [
     {
-      title: 'Project One',
+      title: 'Galleria',
       description: 'A web application that helps users track their daily tasks and manage their time effectively.',
       tech: ['React', 'Node.js', 'MongoDB'],
-      image: 'https://via.placeholder.com/600x400',
-      github: '#',
-      live: '#',
+      image: galleria,
+      github: 'https://github.com/diwakarshukla941/Galleria',
+      live: 'https://galleriea.netlify.app/',
     },
     {
       title: 'Project Two',
