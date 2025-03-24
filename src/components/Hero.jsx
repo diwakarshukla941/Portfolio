@@ -61,7 +61,7 @@ const Hero = () => {
               <FiGithub />
             </a>
             <a
-              href="https://www.linkedin.com/in/diwakar-shukla/"
+              href="https://www.linkedin.com/in/diwakar-shukla-252a4a19b/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-textSecondary hover:text-secondary transition-colors hover-trigger text-2xl"
