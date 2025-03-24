@@ -1,32 +1,42 @@
 import { motion } from 'framer-motion';
 import galleria from "../images/galleria.png"
+import apiTestDashboard from "../images/api_test_dashboard.png"
+import ProjectManagement from "../images/ProjectManagement.png"
+import recipeSearch from "../images/RecipeSearch.png"
 const Projects = () => {
   const projects = [
     {
-      title: 'Galleria
-      ',
-      description: 'A web application that helps users track their daily tasks and manage their time effectively.',
+      title: 'Galleria',
+      description: 'A web application that allows users to search for images. Simply enter a keyword, and it fetches and displays relevant images.',
       tech: ['React', 'Node.js', 'MongoDB'],
       image: galleria,
       github: 'https://github.com/diwakarshukla941/Galleria',
       live: 'https://galleriea.netlify.app/',
     },
     {
-      title: 'Project Two',
-      description: 'An e-commerce platform built with modern web technologies.',
-      tech: ['Next.js', 'Stripe', 'Tailwind CSS'],
-      image: 'https://via.placeholder.com/600x400',
-      github: '#',
-      live: '#',
+      title: "API Testing And Dashboard",
+      description: "A dashboard for testing and managing APIs, built with modern web technologies.",
+      tech: ['HTML', 'CSS', 'JavaScript'],
+      image: apiTestDashboard,
+      github: "https://github.com/diwakarshukla941/-Api-Testing-And-Dashboard",
+      live: "https://iridescent-taiyaki-17aeeb.netlify.app/"
     },
     {
-      title: 'Project Three',
-      description: 'A real-time chat application with video calling capabilities.',
-      tech: ['React', 'WebRTC', 'Firebase'],
-      image: 'https://via.placeholder.com/600x400',
-      github: '#',
-      live: '#',
-    },
+      title: "Project Management App",
+      description: "A simple yet effective Project Management System for software engineers to manage tasks, track progress, and collaborate efficiently.",
+      tech: ["HTML", "CSS", "JavaScript", "LocalStorage"],
+      image: ProjectManagement,
+      github: "https://github.com/diwakarshukla941/Project-Management",
+      live: "https://recipesearchhapp.netlify.app/"
+    }, 
+    {
+      title: "Recipe Search App",
+      description: "A full-stack application built with React and Node.js, where users can search for recipes, save their favorites, and explore random recipes.",
+      tech: ["React", "Node.js", "Tailwind CSS"],
+      image: recipeSearch,
+      github: "https://github.com/diwakarshukla941/recipeSearch",
+      live: "https://recipesearchhapp.netlify.app/"
+    },    
   ];
 
   return (
