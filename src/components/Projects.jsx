@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
-import galleria from "../images/galleria.png"
-import apiTestDashboard from "../images/api_test_dashboard.png"
-import ProjectManagement from "../images/ProjectManagement.png"
-import recipeSearch from "../images/RecipeSearch.png"
+import galleria from "../images/galleria.png";
+import apiTestDashboard from "../images/api_test_dashboard.png";
+import ProjectManagement from "../images/ProjectManagement.png";
+import recipeSearch from "../images/RecipeSearch.png";
+
 const Projects = () => {
   const projects = [
     {
@@ -19,7 +20,7 @@ const Projects = () => {
       tech: ['HTML', 'CSS', 'JavaScript'],
       image: apiTestDashboard,
       github: "https://github.com/diwakarshukla941/-Api-Testing-And-Dashboard",
-      live: "https://iridescent-taiyaki-17aeeb.netlify.app/"
+      live: "https://apivisionn.netlify.app/"
     },
     {
       title: "Project Management App",
@@ -27,7 +28,7 @@ const Projects = () => {
       tech: ["HTML", "CSS", "JavaScript", "LocalStorage"],
       image: ProjectManagement,
       github: "https://github.com/diwakarshukla941/Project-Management",
-      live: "https://recipesearchhapp.netlify.app/"
+      live: "https://projecttmanager.netlify.app/"
     }, 
     {
       title: "Recipe Search App",
@@ -59,9 +60,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className={`relative flex flex-col ${
-                index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-              } items-center gap-8 project-card p-4 hover-trigger`}
+              className={`relative flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 project-card p-4 hover-trigger`}
             >
               <div className="w-full md:w-7/12 relative group">
                 <a href={project.live} target="_blank" rel="noopener noreferrer">
@@ -87,22 +86,7 @@ const Projects = () => {
                   ))}
                 </ul>
                 <div className={`flex gap-4 ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-textPrimary hover:text-secondary transition-colors"
-                  >
-                    GitHub
-                  </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-textPrimary hover:text-secondary transition-colors"
-                  >
-                    Live Demo
-                  </a>
+                  {/* Removed GitHub link */}
                 </div>
               </div>
             </motion.div>
