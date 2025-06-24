@@ -3,6 +3,7 @@ import galleria from "../images/galleria.png";
 import apiTestDashboard from "../images/api_test_dashboard.png";
 import ProjectManagement from "../images/ProjectManagement.png";
 import recipeSearch from "../images/RecipeSearch.png";
+import invoiceApp from "../images/invoiceApp.png";
 
 const Projects = () => {
   const projects = [
@@ -38,6 +39,14 @@ const Projects = () => {
       github: "https://github.com/diwakarshukla941/recipeSearch",
       live: "https://recipesearchhapp.netlify.app/"
     },    
+    {
+      title: "Invoice App",
+      description: "A full-stack application built with React and Node.js, where users can create invoices and manage their bills and also can generate pdf of bills. ",
+      tech: ["React", "Node.js", "Tailwind CSS"],
+      image: invoiceApp,
+      github: "https://github.com/diwakarshukla941/invoiceApp-frontend",
+      live: "https://invoice-app-frontend-xi.vercel.app/"
+    },
   ];
 
   return (
